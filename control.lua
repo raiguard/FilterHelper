@@ -154,12 +154,13 @@ local function build_interface(player_global)
         type = "frame",
         name = "main_frame",
         anchor = anchor,
-        style = "slot_window_frame",
+        -- style = "slot_window_frame",
+        style = "frame_with_even_paddings",
     }
     -- limit the height of the relative gui to fit 10 buttons per column
     -- if there are too many buttons, the scroll-pane allows them to be scrolled
     -- to be visible
-    main_frame.style.maximal_height = (buttons_per_column * 40) + 16
+    main_frame.style.maximal_height = (buttons_per_column * 40) + 24
     main_frame.style.horizontally_stretchable = false
 
     player_global.elements.main_frame = main_frame
