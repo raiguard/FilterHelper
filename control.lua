@@ -154,7 +154,6 @@ local function build_interface(player_global)
         type = "frame",
         name = "main_frame",
         anchor = anchor,
-        -- style = "slot_window_frame",
         style = "frame_with_even_paddings",
     }
     -- limit the height of the relative gui to fit 10 buttons per column
