@@ -168,7 +168,7 @@ local function build_interface(player_global)
     local content_frame = main_frame.add {
         type = "frame",
         direction = "vertical",
-        style = "quick_bar_inner_panel",
+        style = "inside_deep_frame",
     }
 
     local scroll_pane = content_frame.add {
